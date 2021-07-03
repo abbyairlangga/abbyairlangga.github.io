@@ -33,16 +33,16 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About Fonts</a>
+            <a class="nav-link js-scroll-trigger" href="#about">Tentang</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#tester">Type Tester</a>
+            <a class="nav-link js-scroll-trigger" href="#tester">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger d-none d-md-block" href="#character-map">Characters</a>
+            <a class="nav-link js-scroll-trigger d-none d-md-block" href="#character-map">Pengalaman</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#download">Download</a>
+            <a class="nav-link js-scroll-trigger" href="#download">Kontak dan CV</a>
           </li>
         </ul>
       </div>
@@ -65,7 +65,7 @@
     <div class="section-content d-flex align-items-end p-5">
       <div class="row">
         <div class="col-lg-4">
-          <h2>About Fonts</h2>
+          <h2>Tentang</h2>
         </div>
         <div class="col-lg-8">  
           <p class="lead">The +Jakarta Sans is a versatile modern type family designed for +Jakarta City Branding in 2020, where each glyph has its own varieties with its own different characteristics. Like the city itself, the beauty is in the details. The charms of +Jakarta Sans appear when one looks closer, manifesting in a beauty that emerges once seen as a whole. Each alternate on Display family contains several alternates characters, while the text version has a small adjustment to preserve the legibility of small sizes.</p>
@@ -75,73 +75,16 @@
   </section>
 
   <section id="tester" class="bg-white section-content bg-green">
-    <div class="section-content bg-jingga px-3 px-lg-5 py-5">
-	   <div class="row"> 
-        <div class="col-lg-3 py-3">  
-        <select size="1" id="fontFamilySelector" class="custom-select" name="fontFamilySelector" onchange="changeFont()">
-		<option value="PlusJakartaDisplay-Light.woff">Plus Jakarta Display Light</option>
-		<option value="PlusJakartaDisplay-LightItalic.woff">Plus Jakarta Display Light Italic</option>
-		<option value="PlusJakartaDisplay-Regular.woff">Plus Jakarta Display Regular</option>
-		<option value="PlusJakartaDisplay-Italic.woff">Plus Jakarta Display Italic</option>
-		<option value="PlusJakartaDisplay-Medium.woff" selected="Medium">Plus Jakarta Display Medium</option>
-		<option value="PlusJakartaDisplay-MediumItalic.woff">Plus Jakarta Display Medium Italic</option>
-		<option value="PlusJakartaDisplay-Bold.woff">Plus Jakarta Display Bold</option>
-		<option value="PlusJakartaDisplay-BoldItalic.woff">Plus Jakarta Display Bold Italic</option>
-		
-		<option value="Select Display or Text" disabled>Select Display or Text</option>
-		
-		<option value="PlusJakartaText-Light.woff">Plus Jakarta Text Light</option>
-		<option value="PlusJakartaText-LightItalic.woff">Plus Jakarta Text Light Italic</option>
-		<option value="PlusJakartaText-Regular.woff">Plus Jakarta Text Regular</option>
-		<option value="PlusJakartaText-Italic.woff">Plus Jakarta Text Italic</option>
-		<option value="PlusJakartaText-Bold.woff">Plus Jakarta Text Bold</option>
-		<option value="PlusJakartaText-BoldItalic.woff">Plus Jakarta Text Bold Italic</option>
-		</select>
+    <div class="section-content d-flex align-items-end p-5">
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>Tentang</h2>
         </div>
-        <div class="col-lg-3 py-3">  
-          	<div class="labeldiv"><label class="sliderlabel" id="label_fontsize" name="Font Size">Font Size</label><input type="range" min="10" max="120" value="80" class="slider" id="fontsize" oninput="updateSlider();"></div>
-
+        <div class="col-lg-8">  
+          <p class="lead">The +Jakarta Sans is a versatile modern type family designed for +Jakarta City Branding in 2020, where each glyph has its own varieties with its own different characteristics. Like the city itself, the beauty is in the details. The charms of +Jakarta Sans appear when one looks closer, manifesting in a beauty that emerges once seen as a whole. Each alternate on Display family contains several alternates characters, while the text version has a small adjustment to preserve the legibility of small sizes.</p>
         </div>
-        <div class="col-lg-3 py-3 d-none d-sm-block">  
-          <div class="labeldiv"><label class="sliderlabel" id="label_lineheight" name="Line Height">Line Height</label><input type="range" min="30" max="300" value="150" class="slider" id="lineheight" oninput="updateSlider();"></div> 
-
-        </div>
-        <div class="col-lg-3 py-3 d-none d-sm-block">  
-          <div class='labeldiv'><label class='sliderlabel' id='label_spacing' name='Letter Spacing'>Letter Spacing</label><input type='range' min="-10" max="20" step=".1" value='0' class='slider' id='spacing' oninput='updateSlider();'></div>
-
-        </div>
-	   </div>
-	   
-        
-       <div class="py-5">
-	   <div id="typetester" contenteditable="true" spellcheck="false">
-	   Hijau Betawi / Jingga Bis Kota<br>
-	   Kuning Gigi Balang / Biru Abang<br>
-	   Pink None & City Collaboration.<br>
-	   </div>		
-	   
-	   <div class="row">
-       <div class="col-lg-4">   
-       <input type="checkbox" name="ss01" id="ss01" value="ss01" class="otFeature" onchange="updateFeatures()" checked><label for="ss01" class="otFeatureLabel">Lancip Alternates: SS01</label>
-        </div>
-       
-        <div class="col-lg-4">   
-<input type="checkbox" name="ss02" id="ss02" value="ss02" class="otFeature" onchange="updateFeatures()" checked><label for="ss02" class="otFeatureLabel">Lurus Alternates: SS02</label>
-        </div>
-
-        <div class="col-lg-4">   
-<input type="checkbox" name="ss03" id="ss03" value="ss03" class="otFeature" onchange="updateFeatures()" checked><label for="ss03" class="otFeatureLabel">Lingkar Alternates: SS03</label>
-        </div>
-       
-    </div>
-
-	   
-	   </div>     
-       
-           
-        
-        
       </div>
+    </div>     
   </section>
   
    <section id="character-map" class="bg-white text-black">
